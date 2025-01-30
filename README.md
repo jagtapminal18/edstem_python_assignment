@@ -33,5 +33,33 @@
   6)Deploy the code (Deploy)
   
   7)Test the code (Test)
+  
+**Requirements Function should:**
+   1. Accept a string parameter containing log entries
+   2. Return a dictionary with two keys:
+      total_errors : Total count of ERROR entries
+      unique_error_messages : List of unique error messages (sorted
+      alphabetically)
+      
+      Example Input:
+
+      '''[2024-01-07 10:15:30] ERROR: Database connection failed
+                        [2024-01-07 10:15:35] INFO: Retry attempt 1
+                        [2024-01-07 10:15:40] ERROR: Authentication failed'''
+      
+      Expected Output:
+      
+            function should return:
+      
+            {
+            'total_errors': 3,
+            'unique_error_messages': [
+            'Authentication failed',
+            'Database connection failed'
+            ]
+            }
+      
+        
+  
 
   
