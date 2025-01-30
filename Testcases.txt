@@ -1,0 +1,16 @@
+#from unittest import TestCase
+
+
+TestCase
+
+# Test Case 1
+input1 = '''[2024-01-07 10:15:30] ERROR: Database connection failed
+[2024-01-07 10:15:35] INFO: Retry attempt 1
+[2024-01-07 10:15:40] ERROR: Authentication failed'''
+
+# Test Case 2
+input2 = '''[2024-01-07 10:15:30] ERROR: Memory overflow
+[2024-01-07 10:15:35] ERROR: Memory overflow'''
+
+# Test Case 3 (Edge case)
+input3 = ''
