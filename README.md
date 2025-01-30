@@ -58,6 +58,28 @@
             'Database connection failed'
             ]
             }
+
+ **Lambda function:**
+ 
+Lambda Input:
+
+ {
+"candidate_id": "YOUR_ID",
+"log_content": "[2024-01-07 10:15:30] ERROR: Database connection
+failed\n[2024-01-07 10:15:35] INFO: Retry attempt 1"
+}
+
+Lambda Output:
+
+ {
+"statusCode": 200,
+"body": {
+"candidate_id": "YOUR_ID",
+"result": {
+"total_errors": 1,
+"unique_error_messages": ["Database connection failed"]
+}
+}
       
         
   
